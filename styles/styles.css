@@ -67,14 +67,13 @@ aside {
 }
 
 aside img {
-    width: var(--img-aside);
+    width: 250px;
     height: auto;
-    padding-top: 20px;
 }
 aside h2 {
   position: absolute;
-  top: 0px;
-  left: 40px;
+  top: 40px;
+  left: 45px;
   color: white;
   background: rgba(0,0,0,0.5);
   padding: 5px;
