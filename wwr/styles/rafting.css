@@ -2,7 +2,7 @@
   --primary-color: #02183e; 
   --secondary-color: #ffffff;
   --accent1-color: #b34110; 
-  --accent2-color: #227ae6;
+  --accent2-color: #1b63ba;
   
   --heading-font: "Rockwell", "Playfair Display", serif;
   --body-font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -25,8 +25,8 @@ header, main, footer {
 }
 
 header {
-    background-color: var(--accent2-color);
-    color: var(--secondary-color);
+    background-color: var(--accent2-color); /* Now using the darker #1b63ba */
+    color: var(--secondary-color); /* White text *
 }
 
 h1, h2 {
@@ -51,7 +51,7 @@ nav, p, section, article {
 }
 
 .hero article {
-    
+    position: absolute;
     background-color: rgba(255, 255, 255, 0.8); /* Adds a slight transparency so you can see the hero image behind the text */
     padding: 20px;
     margin: 20px;
