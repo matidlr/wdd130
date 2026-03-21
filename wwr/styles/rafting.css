@@ -1,11 +1,10 @@
 :root {
-  --primary-color: #0b3d91;    /* Deep River Blue*/
-  --secondary-color: #fdfdfd;  /* Whitewater White*/
-  --accent1-color: #ff6b35;    /* Safety Orange*/
-  --accent2-color: #2b2d42;    /* Canyon Rock Grey  */
+  --primary-color: #0b3d91; 
+  --secondary-color: #ffffff;
+  --accent1-color: #b34110; 
+  --accent2-color: #2b2d42;
   
-  /* Typography */
-  --heading-font: "Rockwell", "Playfair Display", serif; 
+  --heading-font: "Rockwell", "Playfair Display", serif;
   --body-font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -23,6 +22,11 @@ body {
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 h1, h2 {
@@ -43,10 +47,18 @@ nav, p, section, article {
     position: relative;
 }
 
+.hero article {
+    position: absolute;
+}
+
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero h1 {
+    position: absolute;
 }
 
 h1 {
@@ -57,10 +69,17 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .hero article img {
     float: right;
     width: 125px;
+}
+
+footer {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
 }
