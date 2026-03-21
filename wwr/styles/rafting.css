@@ -52,9 +52,12 @@ nav, p, section, article {
 
 .hero article {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
+    top: 120px; /* Adjust this value so it starts AFTER the h1 height */
+    left: 50px;
+    right: 50px; /* Provides consistent spacing on both sides */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    margin: 20px;
+    /* Remove margin: 20px; as it can behave strangely with absolute positioning */
 }
 
 .hero img {
@@ -69,13 +72,14 @@ nav, p, section, article {
 
 h1 {
     position: absolute;
-    top: 20px;
+    top: 0; 
+    left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: rgba(179, 65, 16, 0.8); /* Use RGBA for transparency instead of opacity */
     color: var(--secondary-color);
+    margin: 0; /* Reset margins to prevent shifting */
 }
 
 .hero article img {
