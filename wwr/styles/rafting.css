@@ -185,19 +185,26 @@ footer {
 
 
 .history {
-    display: grid;
+    display: flex;
+
+    /* Alinear verticalmente los elementos al centro (¡importante!) */
+    align-items: center;
+
+    /* Distribuir uniformemente los elementos horizontalmente (fila por defecto) */
+    justify-content: space-between;
+   /* display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    gap: 30px;
+    gap: 30px; */
 }
 
-.history p {/* Interlineado claro */
-    text-align: justify;       /* Texto justificado */
+.history p {
+    text-align: justify;     
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 .history img {
     height: auto;
-    max-height: 250px;
+    max-height: 200px;
 }
