@@ -169,3 +169,35 @@ footer {
     width: 30px;
     height: auto;
 }
+
+.section-history{ 
+    padding: 30px;         
+    max-width: 1200px;       
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.section-history h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2em;
+}
+
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.history p {/* Interlineado claro */
+    text-align: justify;       /* Texto justificado */
+    margin: 0;
+    padding: 0;
+}
+
+.history img {
+    height: auto;
+    max-height: 250px;
+}
