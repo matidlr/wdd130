@@ -1,7 +1,7 @@
 
 :root {
   --primary-color: #02183e; 
-  --secondary-color: #ffffff;
+  --secondary-color: #e4dfdf;
   --accent1-color: #b34110; 
   --accent2-color: #1b63ba;
   
@@ -160,6 +160,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .svg-social {
@@ -168,6 +169,7 @@ footer {
 }
 
 .section-history { 
+    background-color: var(--secondary-color);
     padding: 30px;          
     max-width: 1200px;        
     margin: 20px auto;
@@ -197,6 +199,10 @@ footer {
     max-height: 200px;
 }
 
+.section-adventure {
+    background-color: var(--secondary-color);
+    margin: 0;
+}
 .section-adventure h2 {
      text-align: center;
     margin-top: 0;
@@ -219,4 +225,5 @@ figcaption {
 
 footer p {
         text-align: center;
+        color: var(--secondary-color);
 }
