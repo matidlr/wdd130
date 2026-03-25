@@ -1,4 +1,4 @@
-/* --- VARIABLES DE COLOR (SE MANTIENEN IGUAL) --- */
+
 :root {
   --primary-color: #02183e; 
   --secondary-color: #ffffff;
@@ -9,7 +9,7 @@
   --body-font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* --- ESTILOS GENERALES (SE MANTIENEN IGUAL) --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -26,17 +26,16 @@ header, main, footer {
     margin: 0 auto;
 }
 
-/* --- CLAVE PARA EL DISEÑO DEL HEADER CON GRID Y FLEXBOX --- */
-header {
+.container {
     background-color: var(--accent2-color);
     color: var(--secondary-color); 
     display: grid;
-    grid-template-columns: auto 1fr; /* Columna auto para logo, 1fr para nav */
-    align-items: center; /* Centrar verticalmente logo y nav */
+    grid-template-columns: auto 1fr; 
+    align-items: center; 
 }
 
-header img {
-    grid-column: 1; /* Colocar logo en la primera columna */
+.container img {
+    grid-column: 1; 
     width: 150px; 
     height: auto;
     margin-left: 50px; 
@@ -45,26 +44,21 @@ header img {
     padding: 0;
 }
 
-header nav {
-    grid-column: 2; /* Colocar nav en la segunda columna */
+.container nav {
+    grid-column: 2; 
+    justify-self: center;
     
-    /* --- ESTA ES LA CLAVE PARA PEGAR EL MENÚ A LA IZQUIERDA --- */
-    justify-self: center; /* Alinear nav a la izquierda dentro de su columna */
-    
-    margin-left: 50px; /* Mantener tu margen izquierdo opcional */
-    
-    /* --- ACTIVAMOS FLEXBOX PARA CENTRAR LOS ENLACES --- */
+    margin-left: 50px;
     display: flex;
-    justify-content: center; /* Centrar enlaces horizontalmente dentro de nav */
+    justify-content: center;
 }
 
-/* --- ESTILOS DEL MENÚ DE NAVEGACIÓN (SE MANTIENEN IGUAL) --- */
 .menu-link {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 0px; /* Espacio horizontal entre los botones del menú */
+    gap: 0px;
 }
 
 .menu-link li a {
@@ -73,23 +67,21 @@ header nav {
     text-decoration: none;
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
-    border-left: none; /* Quitamos el borde izquierdo por defecto */
+    border-left: none; 
 }
 
-/* Borde izquierdo y esquinas redondeadas para el primer botón */
+
 .menu-link li:first-child a {
     border-left: 2px solid var(--secondary-color);
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
-/* Esquinas redondeadas para el último botón */
 .menu-link li:last-child a {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
-/* --- ESTILOS DE TÍTULOS Y CONTENIDO (SE MANTIENEN IGUAL) --- */
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -107,7 +99,6 @@ nav, p, section, article {
     text-decoration: none;
 }
 
-/* --- ESTILOS DEL HÉROE Y ARTÍCULO (SE MANTIENEN IGUAL) --- */
 .hero {
     position: relative;
 }
@@ -161,7 +152,6 @@ article p {
     
 }
 
-/* --- ESTILOS DEL FOOTER (SE MANTIENEN IGUAL) --- */
 footer {
     background-color: var(--accent1-color);
     color: var(--secondary-color);
@@ -178,7 +168,6 @@ footer {
     height: auto;
 }
 
-/* --- ESTILOS DE LAS SECCIONES DE HISTORIA Y AVENTURA (SE MANTIENEN IGUAL) --- */
 .section-history { 
     padding: 30px;          
     max-width: 1200px;        
