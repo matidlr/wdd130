@@ -1,0 +1,63 @@
+/* General Setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+form {
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #000080;
+    /* Navy blue like the example */
+}
+
+/* Form Item Layout */
+.form-item {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Uniform Input Styling */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't break width */
+}
+
+/* Button Styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0000cd;
+}
