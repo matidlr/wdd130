@@ -353,56 +353,6 @@ form button {
     font-size: 15px;
 }
 
-.section-adventure {
-    background-color: var(--secondary-color);
-    margin: 0;
-}
-
-.section-adventure h2 {
-    text-align: center;
-    margin-top: 0;
-    font-size: 2em;
-}
-
-.adventure {
-    display: flex;
-    /* Enables flexbox layout */
-    justify-content: space-around;
-    /* Spreads images to occupy full width */
-    align-items: center;
-    /* Vertically centers the images */
-    width: 100%;
-    /* Ensures the div uses the full 840px */
-    margin: 20px 0;
-}
-
-.adventure img {
-    width: 140px;
-    height: auto;
-}
-
-figcaption {
-    text-align: center;
-}
-
-/* --- Footer (Restored from First CSS) --- */
-footer {
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 0;
-    color: var(--secondary-color);
-}
-
 .socialmedia {
     display: flex;
     gap: 15px;
