@@ -358,11 +358,6 @@ form button {
     gap: 15px;
 }
 
-.svg-social {
-    width: 30px;
-    height: auto;
-}
-
 /* --- The 50/50 Map & Form Layout --- */
 .map-form-container {
     display: flex;
