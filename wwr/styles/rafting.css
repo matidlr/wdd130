@@ -130,10 +130,6 @@ article {
 
 .hero h1 {
     position: absolute;
-}
-
-h1 {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -142,6 +138,12 @@ h1 {
     background-color: rgba(179, 65, 16, 0.8);
     color: var(--secondary-color);
     margin: 0;
+}
+
+.info {
+    text-align: center;
+    color: black;
+    margin-top: 30px;
 }
 
 .hero article img {
@@ -237,77 +239,198 @@ footer p {
 
 form {
     background: #fff;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
+    padding: 25px;
     border: 1px solid #ccc;
     border-radius: 8px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #333;
+    height: 100%;
 }
 
 .form-item {
     display: grid;
-    align-items: center;
-}
-
-/* Label bigger (browser + checkbox) */
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-}
-
-/* Input bigger (name + email) */
-.column2 {
     grid-template-columns: 1fr 2fr;
-    margin: 0.5rem 0;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
 }
 
 .form-item label {
-    text-align: center;
-}
-
-.form-item input {
-    width: 200px;
-    height: 25px;
-    margin-left: 30px;
-}
-
-.map-form {
-    display: flex;
-}
-
-.title-form {
-    display: flex;
-    margin-top: 30px;
-}
-
-.radio-group-container {
-    display: flex;
-    align-items: center;
-    /* Keeps title and buttons vertically centered */
-    gap: 20px;
-}
-
-.group-title {
     color: black;
 }
 
-.radio-options {
+.form-item input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-    gap: 15px;
-    /* Adds space between each individual radio button */
+/* --- Radio Group (1/3 Title, 2/3 Options) --- */
+.radio-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.group-title {
+    flex: 0 0 33.33%;
+    color: black;
+    align-self: center;
+}
+
+.radio-options {
+    flex: 0 0 66.66%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .radio-options label {
-    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 5px;
-    /* Space between the dot and the text */
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+    color: black;
+}
+
+.radio-options input[type="radio"] {
+    accent-color: black;
+}
+
+/* --- Additional Form Elements --- */
+.form-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.form-text label {
+    color: black;
+    margin-bottom: 5px;
+}
+
+textarea {
+    height: 90px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+    /* Increased slightly for better look */
+    margin-top: 10px;
+    background-color: var(--accent2-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    color: black;
+}
+
+.subscribe input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+    cursor: pointer;
+}
+
+.subscribe label {
+    cursor: pointer;
+    font-weight: normal;
+    margin: 0;
+    font-size: 15px;
+}
+
+.section-adventure {
+    background-color: var(--secondary-color);
+    margin: 0;
+}
+
+.section-adventure h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.adventure {
+    display: flex;
+    /* Enables flexbox layout */
+    justify-content: space-around;
+    /* Spreads images to occupy full width */
+    align-items: center;
+    /* Vertically centers the images */
+    width: 100%;
+    /* Ensures the div uses the full 840px */
+    margin: 20px 0;
+}
+
+.adventure img {
+    width: 140px;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* --- Footer (Restored from First CSS) --- */
+footer {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.svg-social {
+    width: 30px;
+    height: auto;
+}
+
+/* --- The 50/50 Map & Form Layout --- */
+.map-form-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    align-items: stretch;
+}
+
+.map-box,
+.form-box {
+    flex: 1;
+    width: 50%;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    border: 0;
+    border-radius: 8px;
 }

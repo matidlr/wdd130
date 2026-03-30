@@ -88,8 +88,6 @@ footer {
 /* --- Main Content --- */
 h1 {
     font-family: var(--heading-font);
-    background-color: rgba(179, 65, 16, 0.8);
-    color: var(--secondary-color);
     text-align: center;
     padding: 16px;
     width: 100%;
@@ -268,6 +266,10 @@ form button {
 .adventure img {
     width: 140px;
     height: auto;
+}
+
+figcaption {
+    text-align: center;
 }
 
 /* --- Footer (Restored from First CSS) --- */
