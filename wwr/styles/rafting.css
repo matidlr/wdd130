@@ -481,7 +481,7 @@ textarea {
     color: #333;
     max-width: 600px; /* Prevents the lines from getting too long/hard to read */
     margin: 3px auto; /* Centers the paragraph itself */
-    text-align: leading;
+    text-align: center;
     font-family: sans-serif;
     color: var(--secondary-color);
    
