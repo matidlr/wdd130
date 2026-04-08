@@ -508,7 +508,7 @@ textarea {
     max-width: 100%; 
     text-align: left; /* Texto recto a la izquierda */
     margin-left: 0;   /* Asegura que no haya espacio extra */
-    
+    margin-top: 0px;
     font-size: 0.9rem;
     line-height: 1.8;
     color: var(--secondary-color);
