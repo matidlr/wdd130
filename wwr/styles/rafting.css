@@ -529,11 +529,11 @@ textarea {
 }
 
 .sec {
-    background-color: var(--accent1-color);
+    background-color: grey;
 }
 
 .sec1 {
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
 }
 
 
