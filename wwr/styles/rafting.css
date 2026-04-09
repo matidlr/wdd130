@@ -362,8 +362,8 @@ textarea {
 }
 
 .button-container {
-    display: flex;           /* This is the missing piece! */
-    justify-content: center; /* Horizontally centers the button */
+    display: flex;          
+    justify-content: center; 
     width: 100%;
     
 }
@@ -390,12 +390,6 @@ textarea {
     justify-content: center; 
 }
 
-.images1 {
-    display: flex;
-    gap: 10px;
-    
-}
-
 
 .images img {
     /* Make the image fill the 150px cell */
@@ -407,26 +401,9 @@ textarea {
 
     transition: transform 0.4s ease; /* Controls the speed of the zoom */
 }
-.images1 img {
-    /* Make the image fill the 150px cell */
-    width: 200px;
-    height: 200px;
-    /* This prevents the image from stretching/distorting */
-    object-fit: cover; 
-    border-radius: 4px; /* Optional: matches your button style */
 
-    transition: transform 0.4s ease; /* Controls the speed of the zoom */
-}
-
-.img-cont1 {
-    margin-left: ;
-}
 
 .images img:hover {
-    transform: scale(1.1); /* Zooms in by 10% */
-    cursor: pointer;
-}
-.images1 img:hover {
     transform: scale(1.1); /* Zooms in by 10% */
     cursor: pointer;
 }
