@@ -72,6 +72,10 @@ footer {
     border-left: none;
 }
 
+.menu-link li:hover {
+    background-color: var(--primary-color);
+}
+
 .menu-link li:first-child a {
     border-left: 2px solid var(--secondary-color);
     border-top-left-radius: 8px;
