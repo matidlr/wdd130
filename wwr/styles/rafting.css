@@ -3,6 +3,7 @@
     --secondary-color: #fbfbfb;
     --accent1-color: #b34110;
     --accent2-color: #1b63ba;
+    --back-color:  rgb(238, 232, 232);
 
     --heading-font: "Rockwell", "Playfair Display", serif;
     --body-font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -113,6 +114,9 @@ article {
     position: relative;
 }
 
+.hero p {
+    color: var(--primary-color);
+}
 .hero article {
     display: flex;
     align-items: stretch;
@@ -180,7 +184,7 @@ footer {
 }
 
 .section-history {
-    background-color: var(--secondary-color);
+    background-color: var(--back-color);
     padding: 30px;
     max-width: 1200px;
     margin: 20px auto;
@@ -203,6 +207,7 @@ footer {
     text-align: justify;
     margin: 0;
     padding: 10px;
+    color: var(--primary-color);
 }
 
 .history img {
@@ -219,6 +224,10 @@ footer {
     text-align: center;
     margin-top: 0;
     font-size: 2em;
+}
+
+.section-adventure p {
+    color: var(--primary-color);
 }
 
 .adventure {
