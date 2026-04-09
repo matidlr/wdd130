@@ -600,18 +600,27 @@ textarea {
 }
 
 .newsletter-section {
-    background-color: #f4f7f6; /* Light river-mist grey */
-    padding: 60px 20px;
-    margin-top: 40px;
+    background-color: #f4f7f6; /* Gris claro */
+    margin: 40px 0;
     border-radius: 8px;
     width: 100%;
+    padding: 40px 0;
+    
+    /* Estas líneas aseguran que el hijo (container) esté en el centro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
+/* 2. La caja de 840px: Centrada y protegida contra desbordamientos */
 .newsletter-container {
-    max-width: 840px;
     width: 100%;
+    max-width: 840px;
     margin: 0 auto;
+    padding: 0 30px; /* Margen interno para que no toque los bordes en móvil */
     text-align: center;
+    box-sizing: border-box;
 }
 
 .newsletter-content h3 {
@@ -626,11 +635,13 @@ textarea {
     margin-bottom: 30px;
 }
 
+/* 3. El formulario: Alineado al centro dentro de los 840px */
 .newsletter-form {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
+    width: 100%;
 }
 
 .input-group {
@@ -645,6 +656,7 @@ textarea {
     border-radius: 4px;
     font-size: 1rem;
     outline: none;
+    box-sizing: border-box; /* Asegura que el padding no estire el input */
     transition: border-color 0.3s ease;
 }
 
@@ -652,11 +664,12 @@ textarea {
     border-color: var(--secondary-color, #2c3e50);
 }
 
+/* 4. Botón corregido */
 .submit-btn {
     padding: 12px 30px;
     background-color: var(--accent1-color);
     color: var(--secondary-color);
-    border: ;
+    border: none; /* Corregido de border: ; */
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
@@ -665,7 +678,7 @@ textarea {
 
 .submit-btn:hover {
     background-color: #1a252f;
-    transform: translateY(-2px); /* Matches the "lift" logic of your text */
+    transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
