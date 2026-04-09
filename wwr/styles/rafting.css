@@ -388,8 +388,8 @@ textarea {
 
 .contact-btn
 {
-    width: 30%;
-    height: 40px;
+    width: 35%;
+    height: 50px;
     margin-top: 10px;
     background-color: var(--accent2-color);
     color: white;
@@ -404,13 +404,17 @@ textarea {
 
 .contact-btn a {
     color: #ccc;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
+
 
 .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .images {
