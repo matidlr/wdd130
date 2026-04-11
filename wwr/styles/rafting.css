@@ -206,7 +206,7 @@ footer {
 /* 2. SECTION ADVENTURE */
 .section-adventure {
     width: 100%;
-    padding: 60px 0; 
+    padding: 10px 0;
     display: block; 
 }
 
@@ -747,7 +747,7 @@ textarea {
     width: 100%;
     max-width: 840px;
     margin: 0 auto !important;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .grid-container {
