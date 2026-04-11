@@ -624,19 +624,25 @@ textarea {
 .cta-section {
     width: 100%;
     max-width: 840px;
-    margin: 60px auto;
+    margin: 60px auto; /* Centrado horizontal */
+    padding: 0; /* Asegúrate de que no haya padding aquí */
 }
 
 .cta-container {
+    width: 100%; /* Ocupa el 100% de los 840px del padre */
+    box-sizing: border-box;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent2-color) 100%);
     color: white;
     padding: 40px 50px;
     border-radius: 12px;
     display: flex;
-    justify-content: space-between; /* Separa texto y botón */
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+
+
 
 .cta-text {
     max-width: 60%;
