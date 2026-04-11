@@ -78,8 +78,8 @@ header {
     border-left: none;
 }
 
-.menu-link li:hover {
-    background-color: var(--primary-color);
+.menu-link li a:hover {
+    background-color: var(--accent1-color);
 }
 
 .menu-link li:first-child a {
