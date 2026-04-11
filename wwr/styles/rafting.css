@@ -726,20 +726,9 @@ textarea {
 }
 
 /* Para la sección del Newsletter */
-.cta-section {
-    width: 100%;
-    max-width: 840px; 
-    margin: 60px auto !important;
-}
 
-.cta-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 50px;
-    box-sizing: border-box;
-}
+
+
 
 
 
